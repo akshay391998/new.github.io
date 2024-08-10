@@ -12,6 +12,7 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
+            color: #fff;
         }
 
         nav {
@@ -32,7 +33,7 @@
         }
 
         nav ul li a {
-            color: whitesmoke;
+            color: #fff;
             text-decoration: none;
             font-size: 18px;
         }
@@ -44,19 +45,17 @@
 
         section {
             padding: 60px 20px;
-            color: whitesmoke;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h2 {
-            text-align: center;
             font-size: 2.5em;
+            text-align: center;
             margin-bottom: 20px;
-        }
-
-        .contact-grid {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         .contact-card {
@@ -64,30 +63,25 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
 
         .contact-card p {
-            color: #666;
-            line-height: 1.6;
+            margin: 10px 0;
         }
 
-        .contact-card p strong {
+        .contact-card a {
             color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
             h2 {
                 font-size: 2em;
-            }
-
-            .contact-card {
-                padding: 15px;
             }
         }
     </style>
@@ -107,12 +101,10 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <p><strong>Email:</strong> your-email@example.com</p>
-                    <p><strong>Phone:</strong> +123 456 7890</p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-                </div>
+            <div class="contact-card">
+                <p><strong>Email:</strong> <a href="mailto:akshay391998@gmail.com">akshay391998@gmail.com</a></p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
             </div>
         </div>
     </section>
