@@ -12,12 +12,17 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #fff;
+            color: whitesmoke;
         }
 
         nav {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
 
         nav ul {
@@ -33,7 +38,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: whitesmoke;
             text-decoration: none;
             font-size: 18px;
         }
@@ -44,18 +49,19 @@
         }
 
         section {
-            padding: 60px 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 120px 20px 60px; /* Increased top padding to account for fixed nav */
         }
 
         h2 {
-            font-size: 2.5em;
             text-align: center;
+            font-size: 2.5em;
             margin-bottom: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         .contact-card {
@@ -63,11 +69,21 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
         }
 
         .contact-card p {
-            margin: 10px 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-card p strong {
+            color: #007BFF;
         }
 
         .contact-card a {
@@ -82,6 +98,29 @@
         @media (max-width: 768px) {
             h2 {
                 font-size: 2em;
+            }
+
+            .contact-card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .contact-card {
+                padding: 10px;
             }
         }
     </style>
@@ -101,10 +140,12 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <div class="contact-card">
-                <p><strong>Email:</strong> <a href="mailto:akshay391998@gmail.com">akshay391998@gmail.com</a></p>
-                <p><strong>Phone:</strong> +123 456 7890</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <p><strong>Email:</strong> your-email@example.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+                </div>
             </div>
         </div>
     </section>
