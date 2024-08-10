@@ -12,14 +12,12 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            padding: 0;
+            color: whitesmoke;
         }
 
         #info {
-            color: whitesmoke;
             text-align: center;
-            padding-top: 20px;
-            margin: 0;
+            padding: 20px;
         }
 
         #img1 img {
@@ -32,12 +30,13 @@
 
         #icons {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
         }
 
         #icons a img {
-            padding: 10px;
+            padding: 5px;
             height: 40px;
+            width: 40px;
         }
 
         nav ul {
@@ -71,40 +70,38 @@
 
         @media (max-width: 768px) {
             #img1 img {
-                width: 100px;
-                height: 100px;
+                width: 120px;
+                height: 120px;
             }
 
             #icons a img {
-                height: 30px;
-                padding: 5px;
+                height: 35px;
+                width: 35px;
             }
 
             nav ul {
                 flex-direction: column;
             }
 
-            nav ul li a {
-                padding: 10px;
-                width: 100%;
+            nav ul li {
+                margin: 5px 0;
             }
         }
 
         @media (max-width: 480px) {
             #img1 img {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
             }
 
             #icons a img {
-                height: 25px;
-                padding: 5px;
+                height: 30px;
+                width: 30px;
             }
 
             nav ul li a {
                 padding: 10px;
                 font-size: 14px;
-                width: 100%;
             }
         }
     </style>
