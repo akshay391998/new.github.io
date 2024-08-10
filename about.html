@@ -12,12 +12,17 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #fff;
+            color: whitesmoke;
         }
 
         nav {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
 
         nav ul {
@@ -33,7 +38,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: whitesmoke;
             text-decoration: none;
             font-size: 18px;
         }
@@ -44,27 +49,67 @@
         }
 
         section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 120px 20px 60px; /* Increased top padding to account for fixed nav */
+            color: whitesmoke;
         }
 
         h2 {
+            text-align: center;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
 
-        p {
+        .about-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #333;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-card p {
+            color: #666;
             line-height: 1.6;
         }
 
         @media (max-width: 768px) {
             h2 {
                 font-size: 2em;
+            }
+
+            .about-card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .about-card {
+                padding: 10px;
             }
         }
     </style>
@@ -83,12 +128,12 @@
     </nav>
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate web developer with a strong foundation in full-stack development. My skills include
-                HTML, CSS, JavaScript, Java, and SQL. I am dedicated to creating responsive, user-friendly websites and
-                applications. I am always eager to learn and take on new challenges to improve my skills.
-            </p>
+            <h2>About</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <p>Hello! I'm Biradar Akshay, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and am always eager to learn new technologies and improve my skills.</p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
