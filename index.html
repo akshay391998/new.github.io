@@ -12,29 +12,31 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
+            padding: 0;
         }
 
         #info {
             color: whitesmoke;
-            margin-left: 3%;
-            padding-top: 30px;
+            text-align: center;
+            padding-top: 20px;
+            margin: 0;
         }
 
         #img1 img {
             border-radius: 50%;
             display: block;
-            margin: 50px auto;
+            margin: 20px auto;
             width: 150px;
             height: 150px;
         }
 
         #icons {
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
         }
 
         #icons a img {
-            padding: 5px;
+            padding: 10px;
             height: 40px;
         }
 
@@ -42,14 +44,14 @@
             list-style-type: none;
             text-align: center;
             padding: 0;
-            margin: 20px 0;
+            margin: 0;
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         nav ul li {
-            margin: 10px;
+            margin: 5px;
         }
 
         nav ul li a {
@@ -59,6 +61,7 @@
             border: 1px solid whitesmoke;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
         }
 
         nav ul li a:hover {
@@ -67,17 +70,41 @@
         }
 
         @media (max-width: 768px) {
-            #info {
-                text-align: center;
-                margin-left: 0;
+            #img1 img {
+                width: 100px;
+                height: 100px;
+            }
+
+            #icons a img {
+                height: 30px;
+                padding: 5px;
             }
 
             nav ul {
                 flex-direction: column;
             }
 
-            nav ul li {
-                margin: 5px 0;
+            nav ul li a {
+                padding: 10px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #img1 img {
+                width: 80px;
+                height: 80px;
+            }
+
+            #icons a img {
+                height: 25px;
+                padding: 5px;
+            }
+
+            nav ul li a {
+                padding: 10px;
+                font-size: 14px;
+                width: 100%;
             }
         }
     </style>
@@ -96,8 +123,7 @@
     <div id="icons">
         <a href="https://github.com/akshay391998"><img src="Github.png" alt="Github"></a>
         <a href="https://www.linkedin.com/in/akshay-biradar-5226a121a/"><img src="Linkedin.png" alt="Linkedin"></a>
-        <a href="https://www.instagram.com/mr_akshay_biradar_03/?igsh=ODIwbHh6OHVvcnBz"><img src="Instagram.png"
-                alt="Instagram"></a>
+        <a href="https://www.instagram.com/mr_akshay_biradar_03/?igsh=ODIwbHh6OHVvcnBz"><img src="Instagram.png" alt="Instagram"></a>
     </div>
 
     <nav>
