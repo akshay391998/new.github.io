@@ -12,6 +12,7 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
+            color: #fff;
         }
 
         nav {
@@ -32,7 +33,7 @@
         }
 
         nav ul li a {
-            color: whitesmoke;
+            color: #fff;
             text-decoration: none;
             font-size: 18px;
         }
@@ -44,46 +45,26 @@
 
         section {
             padding: 60px 20px;
-            color: whitesmoke;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h2 {
-            text-align: center;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
 
-        .about-grid {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-
-        .about-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .about-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .about-card p {
-            color: #666;
+        p {
             line-height: 1.6;
         }
 
         @media (max-width: 768px) {
             h2 {
                 font-size: 2em;
-            }
-
-            .about-card {
-                padding: 15px;
             }
         }
     </style>
@@ -102,12 +83,12 @@
     </nav>
     <section id="about">
         <div class="container">
-            <h2>About</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <p>Hello! I'm Biradar Akshay, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and am always eager to learn new technologies and improve my skills.</p>
-                </div>
-            </div>
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer with a strong foundation in full-stack development. My skills include
+                HTML, CSS, JavaScript, Java, and SQL. I am dedicated to creating responsive, user-friendly websites and
+                applications. I am always eager to learn and take on new challenges to improve my skills.
+            </p>
         </div>
     </section>
 </body>
