@@ -12,12 +12,17 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #fff;
+            color: whitesmoke;
         }
 
         nav {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
 
         nav ul {
@@ -33,7 +38,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: whitesmoke;
             text-decoration: none;
             font-size: 18px;
         }
@@ -44,17 +49,12 @@
         }
 
         section {
-            padding: 60px 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 120px 20px 60px; /* Increased top padding to account for fixed nav */
         }
 
         h2 {
-            font-size: 2.5em;
             text-align: center;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
 
@@ -70,6 +70,7 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #333;
         }
 
         .projects-card:hover {
@@ -79,7 +80,6 @@
 
         .projects-card h3 {
             margin-top: 0;
-            color: #333;
         }
 
         .projects-card p {
@@ -90,6 +90,29 @@
         @media (max-width: 768px) {
             h2 {
                 font-size: 2em;
+            }
+
+            .projects-card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .projects-card {
+                padding: 10px;
             }
         }
     </style>
@@ -107,18 +130,13 @@
         </ul>
     </nav>
     <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="projects-card">
-                    <h3>Project 1</h3>
-                    <p>This project involves an automatic room light controller with a visitor counter using a microcontroller. It switches the room light on and off based on the number of people in the room.</p>
-                </div>
-                <div class="projects-card">
-                    <h3>Project 2</h3>
-                    <p>This is a personal portfolio created using HTML and CSS. It highlights my journey and expertise, including sections on my education, projects, and skills.</p>
-                </div>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="projects-card">
+                <h3>Project Title</h3>
+                <p>Details about the project here. Include a brief description and key features.</p>
             </div>
+            <!-- Add more project cards as needed -->
         </div>
     </section>
 </body>
