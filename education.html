@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-image: url(Image4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: whitesmoke;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .education-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .education-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .education-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .education-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .education-card p strong {
+            color: #007BFF;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .education-card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .education-card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Visvesvaraya Technological University</h3>
+                    <p><strong>Degree:</strong> Bachelor of Engineering</p>
+                    <p><strong>Year:</strong> 2017 - 2021</p>
+                    <p><strong>Grade:</strong> 7.16 CGPA</p>
+                </div>
+                <div class="education-card">
+                    <h3>Diamond Independent P.U Science College</h3>
+                    <p><strong>Degree:</strong> P.U.C</p>
+                    <p><strong>Year:</strong> 2015 - 2017</p>
+                    <p><strong>Percentage:</strong> 76%</p>
+                </div>
+                <div class="education-card">
+                    <h3>Seventh-Day Adventist High School</h3>
+                    <p><strong>Degree:</strong> S.S.L.C</p>
+                    <p><strong>Year:</strong> 2015</p>
+                    <p><strong>Percentage:</strong> 72%</p>
+                </div>
+                <!-- Add more education cards as needed -->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

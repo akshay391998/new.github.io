@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-image: url(Image4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: whitesmoke;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .projects-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projects-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .projects-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .projects-card p strong {
+            color: #007BFF;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .projects-card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .projects-card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="projects-card">
+                    <h3>Project 1</h3>
+                    <p>
+                        This Project Automatic Room Light Controller with Visitor Counter using Microcontroller is a
+                        reliable circuit that takes over the task of controlling the room lights as well as counting
+                        the number of persons/visitors in the room very accurately. When somebody enters the room, the
+                        counter is incremented by one, and the light in the room will be switched ON. When someone
+                        leaves
+                        the room, the counter is decremented by one. The light will only be switched OFF until all the
+                        persons in the room go out. The total number of persons inside the room is also displayed on the
+                        seven-segment displays.
+                    </p>
+                </div>
+                <div class="projects-card">
+                    <h3>Project 2</h3>
+                    <p>
+                        I created this portfolio using HTML and CSS to highlight my journey and expertise. Explore
+                        sections on my education, projects, and skills to learn more about my background and what I
+                        bring to the table. It serves as a comprehensive overview of my background and expertise in web
+                        development.
+                    </p>
+                </div>
+                <!-- Add more projects cards as needed -->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
