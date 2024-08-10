@@ -7,68 +7,34 @@
     <title>Home</title>
     <style>
         body {
-            background-image: url(Image4.jpg);
+            background-image: url('Image4.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
-            padding: 0;
-            color: #fff;
             font-family: Arial, sans-serif;
         }
 
-        #info {
-            text-align: center;
-            padding: 20px;
-        }
-
-        #img1 img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: block;
-            margin: 20px auto;
-        }
-
-        #icons {
-            text-align: center;
-            padding: 20px;
-        }
-
-        #icons a img {
-            padding: 5px;
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        #icons a img:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-        }
-
         nav {
-            text-align: center;
-            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
         }
 
         nav ul li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
         nav ul li a {
+            color: whitesmoke;
             text-decoration: none;
-            color: #fff;
-            padding: 10px 15px;
-            transition: color 0.3s, text-decoration 0.3s;
+            font-size: 18px;
         }
 
         nav ul li a:hover {
@@ -76,48 +42,42 @@
             color: aqua;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            #img1 img {
-                width: 120px;
-                height: 120px;
-            }
-
-            nav ul li a {
-                padding: 8px 10px;
-            }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: whitesmoke;
         }
 
-        @media (max-width: 480px) {
-            #img1 img {
-                width: 100px;
-                height: 100px;
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
             }
 
-            nav ul li a {
-                padding: 6px 8px;
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 
 <body>
-
-    <div id="img1">
-        <img src="Akshay1.png" alt="Akshay">
-    </div>
-
-    <div id="info">
-        <h1>Biradar Akshay</h1>
-        <h2>Frontend Developer</h2>
-    </div>
-
-    <div id="icons">
-        <a href="https://github.com/akshay391998"><img src="Github.png" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/akshay-biradar-5226a121a/"><img src="Linkedin.png" alt="Linkedin"></a>
-        <a href="https://www.instagram.com/mr_akshay_biradar_03/?igsh=ODIwbHh6OHVvcnBz"><img src="Instagram.png" alt="Instagram"></a>
-    </div>
-
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -128,7 +88,10 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Exploring my journey and skills as a web developer.</p>
+    </div>
 </body>
 
 </html>
