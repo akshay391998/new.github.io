@@ -7,38 +7,34 @@
     <title>Projects</title>
     <style>
         body {
-            background-image: url(Image4.jpg);
+            background-image: url('Image4.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
-            padding: 0;
-            color: #fff;
             font-family: Arial, sans-serif;
         }
 
         nav {
-            text-align: center;
-            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
         }
 
         nav ul li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
         nav ul li a {
+            color: whitesmoke;
             text-decoration: none;
-            color: #fff;
-            padding: 10px 15px;
-            transition: color 0.3s, text-decoration 0.3s;
+            font-size: 18px;
         }
 
         nav ul li a:hover {
@@ -47,26 +43,20 @@
         }
 
         section {
-            padding: 20px;
+            padding: 60px 20px;
+            color: whitesmoke;
         }
 
         h2 {
             text-align: center;
+            font-size: 2.5em;
             margin-bottom: 20px;
-            font-size: 2em;
-            color: whitesmoke;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
         }
 
         .projects-grid {
             display: grid;
             gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         .projects-card {
@@ -92,27 +82,13 @@
             line-height: 1.6;
         }
 
-        .projects-card p strong {
-            color: #007BFF;
-        }
-
         @media (max-width: 768px) {
             h2 {
-                font-size: 1.8em;
+                font-size: 2em;
             }
 
             .projects-card {
                 padding: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 1.5em;
-            }
-
-            .projects-card {
-                padding: 10px;
             }
         }
     </style>
@@ -129,38 +105,17 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="projects-card">
-                    <h3>Project 1</h3>
-                    <p>
-                        This Project Automatic Room Light Controller with Visitor Counter using Microcontroller is a
-                        reliable circuit that takes over the task of controlling the room lights as well as counting
-                        the number of persons/visitors in the room very accurately. When somebody enters the room, the
-                        counter is incremented by one, and the light in the room will be switched ON. When someone
-                        leaves
-                        the room, the counter is decremented by one. The light will only be switched OFF until all the
-                        persons in the room go out. The total number of persons inside the room is also displayed on the
-                        seven-segment displays.
-                    </p>
+                    <h3>Project Title</h3>
+                    <p>Description of the project, technologies used, and any notable achievements.</p>
                 </div>
-                <div class="projects-card">
-                    <h3>Project 2</h3>
-                    <p>
-                        I created this portfolio using HTML and CSS to highlight my journey and expertise. Explore
-                        sections on my education, projects, and skills to learn more about my background and what I
-                        bring to the table. It serves as a comprehensive overview of my background and expertise in web
-                        development.
-                    </p>
-                </div>
-                <!-- Add more projects cards as needed -->
             </div>
         </div>
     </section>
-
 </body>
 
 </html>
