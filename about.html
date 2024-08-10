@@ -7,38 +7,34 @@
     <title>About</title>
     <style>
         body {
-            background-image: url(Image4.jpg);
+            background-image: url('Image4.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
-            padding: 0;
-            color: #fff;
             font-family: Arial, sans-serif;
         }
 
         nav {
-            text-align: center;
-            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
         }
 
         nav ul li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
         nav ul li a {
+            color: whitesmoke;
             text-decoration: none;
-            color: #fff;
-            padding: 10px 15px;
-            transition: color 0.3s, text-decoration 0.3s;
+            font-size: 18px;
         }
 
         nav ul li a:hover {
@@ -47,26 +43,20 @@
         }
 
         section {
-            padding: 20px;
+            padding: 60px 20px;
+            color: whitesmoke;
         }
 
         h2 {
             text-align: center;
+            font-size: 2.5em;
             margin-bottom: 20px;
-            font-size: 2em;
-            color: whitesmoke;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
         }
 
         .about-grid {
             display: grid;
             gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         .about-card {
@@ -89,28 +79,17 @@
 
         @media (max-width: 768px) {
             h2 {
-                font-size: 1.8em;
+                font-size: 2em;
             }
 
             .about-card {
                 padding: 15px;
             }
         }
-
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 1.5em;
-            }
-
-            .about-card {
-                padding: 10px;
-            }
-        }
     </style>
 </head>
 
 <body>
-
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -121,20 +100,16 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <section id="about">
         <div class="container">
             <h2>About</h2>
             <div class="about-grid">
                 <div class="about-card">
-                    <p>Hello! I'm Biradar Akshay, a passionate web developer with experience in creating dynamic and
-                        responsive
-                        websites. I love coding and am always eager to learn new technologies and improve my skills.</p>
+                    <p>Hello! I'm Biradar Akshay, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and am always eager to learn new technologies and improve my skills.</p>
                 </div>
             </div>
         </div>
     </section>
-
 </body>
 
 </html>
