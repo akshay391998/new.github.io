@@ -12,6 +12,7 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
+            color: #fff;
         }
 
         nav {
@@ -32,7 +33,7 @@
         }
 
         nav ul li a {
-            color: whitesmoke;
+            color: #fff;
             text-decoration: none;
             font-size: 18px;
         }
@@ -44,19 +45,23 @@
 
         section {
             padding: 60px 20px;
-            color: whitesmoke;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h2 {
-            text-align: center;
             font-size: 2.5em;
+            text-align: center;
             margin-bottom: 20px;
         }
 
         .skills-grid {
             display: grid;
             gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
         .skills-card {
@@ -64,31 +69,17 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .skills-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .skills-card h3 {
-            margin-top: 0;
-            color: #333;
         }
 
         .skills-card p {
-            color: #666;
-            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            font-size: 1.2em;
         }
 
         @media (max-width: 768px) {
             h2 {
                 font-size: 2em;
-            }
-
-            .skills-card {
-                padding: 15px;
             }
         }
     </style>
@@ -110,8 +101,16 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skills-card">
-                    <h3>Skill Title</h3>
-                    <p>Description of the skill, level of expertise, and any relevant details.</p>
+                    <p>JAVA</p>
+                </div>
+                <div class="skills-card">
+                    <p>SQL</p>
+                </div>
+                <div class="skills-card">
+                    <p>HTML</p>
+                </div>
+                <div class="skills-card">
+                    <p>CSS</p>
                 </div>
             </div>
         </div>
